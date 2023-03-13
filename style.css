@@ -1,0 +1,149 @@
+/** @format */
+:root {
+  /*Global colors*/
+
+  /*Primary*/
+  --primary-darkCyan: hsl(158, 36%, 37%);
+  --primary-Cream: hsl(30, 38%, 92%);
+
+  /*Nuetral*/
+  --neutral-vdBlue: hsl(212, 21%, 14%);
+  --nuetral-dgBlue: hsl(228, 12%, 48%);
+  --nuetral-White: hsl(0, 0%, 100%);
+}
+/*Reset default spacings*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Set / Improve media defaults for responsiveness */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+html {
+  height: 100%;
+}
+/* Force font typography inherit */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background-color: var(--primary-Cream);
+  padding: 1rem;
+}
+
+article {
+  display: grid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: var(--nuetral-White);
+  max-width: 600px;
+}
+
+/* Media Query */
+
+@media (min-width: 600px) {
+  article {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/****** Card Info ******/
+
+.info-card {
+  display: grid;
+  padding: 1.8em;
+  gap: 0.8rem;
+}
+
+.category {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--nuetral-dgBlue);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+prod-name h2 {
+  font-family: "Fraunces", serif;
+  color: var(--neutral-vdBlue);
+  font-size: 1.9rem;
+  line-height: 1;
+  margin: 0em auto;
+}
+
+.prod-info p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: var(--nuetral-dgBlue);
+  /* margin-bottom: 1em; */
+  line-height: 1.7;
+}
+
+/****** Prices ******/
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1em;
+}
+
+.price-new p {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: var(--primary-darkCyan);
+}
+.price-old p {
+  font-family: "Fraunces", serif;
+  font-size: 0.8rem;
+  /* font-weight: lighter; */
+  color: var(--primary-darkCyan);
+}
+
+/****** Button ******/
+
+button {
+  cursor: pointer;
+  padding: 0.8em 1.5em;
+  margin-bottom: 0.6em;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--primary-darkCyan);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--nuetral-White);
+  border-radius: 10px;
+}
+
+button:is(:hover, :focus) {
+  background-color: hsl(158, 36%, 22%);
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} 
+
+lines of code saved -- 10   */

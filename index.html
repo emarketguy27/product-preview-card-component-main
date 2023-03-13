@@ -1,0 +1,83 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main>
+      <article class="pr-card">
+        <picture class="pr-card__img">
+          <source
+            srcset="./images/image-product-desktop.jpg"
+            media="(min-width: 600px)"
+          />
+          <img
+            src="./images/image-product-mobile.jpg"
+            alt="image of chanel Gabrielle perfume"
+          />
+        </picture>
+
+        <div class="info-card">
+          <p class="category">Perfume</p>
+          <prod-name>
+            <h2>Gabrielle Essence Eau De Parfum</h2>
+          </prod-name>
+          <div class="prod-info">
+            <p>
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
+          <div class="prices">
+            <div class="price-new">
+              <p>$149.99</p>
+            </div>
+            <div class="price-old">
+              <p><s>$169.99</s></p>
+            </div>
+          </div>
+          <button type="button">
+            <img
+              src="./images/icon-cart.svg"
+              alt="add to cart icon"
+              class="cart"
+            />
+            Add to Cart
+          </button>
+        </div>
+      </article>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
